@@ -1,6 +1,7 @@
 import Container from './Container';
 import Draggable from './Draggable';
-export * from 'smooth-dnd';
+
+export * from 'esbuild-smooth-dnd';
 
 export {
   Container,
