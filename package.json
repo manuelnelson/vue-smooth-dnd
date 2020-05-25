@@ -26,9 +26,9 @@
     "dnd",
     "smooth-dnd"
   ],
-  "main": "dist/vue-smooth-dnd.js",
-  "module": "dist/vue-smooth-dnd.esm.js",
-  "jsnext:main": "dist/vue-smooth-dnd.esm.js",
+  "main": "dist/vue-smooth-dnd-esbuild.js",
+  "module": "dist/vue-smooth-dnd-esbuild.esm.js",
+  "jsnext:main": "dist/vue-smooth-dnd-esbuild.esm.js",
   "files": [
     "dist/*"
   ],
