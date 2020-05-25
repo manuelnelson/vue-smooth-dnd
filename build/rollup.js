@@ -1,12 +1,12 @@
 // ------------------------------------------------------------------------------------------
 // setup
 // ------------------------------------------------------------------------------------------
+import path from 'path';
+import buble from 'rollup-plugin-buble';
+import commonjs from 'rollup-plugin-commonjs';
+import license from 'rollup-plugin-license';
+import uglify from 'rollup-plugin-uglify';
 
-import path from 'path'
-import license from 'rollup-plugin-license'
-import commonjs from 'rollup-plugin-commonjs'
-import uglify from 'rollup-plugin-uglify'
-import buble from 'rollup-plugin-buble'
 
 const pkg = require('../package.json')
 const external = Object.keys(pkg.dependencies || {})
@@ -19,8 +19,10 @@ function output (ext, format = 'umd') {
     file: `dist/${name}.${ext}`,
     format: format,
     exports: 'named',
-    globals: {
-      'smooth-dnd': 'SmoothDnD'
+    output: {
+      globals: {
+        'smooth-dnd': 'SmoothDnD'
+      }  
     }
   }
 }
