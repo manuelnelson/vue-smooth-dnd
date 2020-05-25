@@ -1,6 +1,6 @@
 {
   "name": "vue-smooth-dnd-esbuild",
-  "version": "0.8.1",
+  "version": "0.8.11",
   "description": "Vue wrappers for smooth-dnd forked and updated",
   "author": "Kutlu Sahin",
   "homepage": "https://kutlugsahin.github.io/vue-smooth-dnd/",
